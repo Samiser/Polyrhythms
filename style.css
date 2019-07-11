@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body {
+	background-color: #333;
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	text-align: center;
+	font-size: 70px;
+	margin-bottom: 10px;
+	color: turquoise;
+	letter-spacing: 2px;
+}
+
+h3 {
+	text-align: center;
+	font-size: 12px;
+	color: turquoise;
+	letter-spacing: 1px;
+}
+
+.info {
+	text-align: center;
+	font-size: 20px;
+	color: turquoise;
+}
+
+#content {
+	display: block;
+	width: 842px;
+	margin-left: calc(calc(100% - 842px) / 2);
+	margin-top: 5vh;
+}
+
+#bars {
+	display: inline-block;
+	float: left;
+	padding: 0;
+	margin: 5px;
+	width: 607px;
+	padding-bottom: 10px;
+}
+
+#bars div {
+	display: inline-block table;
+	padding: 0;
+	margin: 10px 10px 0px 10px;
+	width: 585px;
+	height: 100px;
+}
+
+#bars div#position_bar #position_bar_progress {
+	width: 30%;
+	margin: 0;
+}
+
+@keyframes play_kick {
+	0% {background-color: none}
+	20% {background-color: turquoise}
+	100% {background-color: none}
+}
+
+@keyframes play_hihat {
+	0% {background-color: none}
+	20% {background-color: yellow}
+	100% {background-color: none}
+}
+
+@keyframes play_snare {
+	0% {background-color: none}
+	20% {background-color: #FF6EC7} 
+	100% {background-color: none}
+}
+
+.note {
+	margin: 10px;
+	display: table-cell;
+}
+
+.kick {
+	animation-name: play_kick;
+	animation-duration: 800ms;
+}
+
+.snare {
+	animation-name: play_snare;
+	animation-duration: 800ms;
+}
+
+.hihat {
+	animation-name: play_hihat;
+	animation-duration: 800ms;
+}
+
+#plus_controls {
+	float: right;
+	display: inline-block;
+	margin: 5px;
+	width: 100px;
+	height: 235px;
+}
+
+#minus_controls {
+	float: left;
+	display: inline-block;
+	margin: 5px;
+	width: 100px;
+	height: 235px;
+}
+
+.minus_control {
+	position: relative;
+	display: inline-block table;
+	padding: 0;
+	margin: 40px 40px 68px 60px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.minus_control::after { 
+	content: " "; 
+	position: absolute; 
+	display: block; 
+	background-color: turquoise; 
+	height: 10px; 
+	margin-top: -5px; 
+	top: 50%; 
+	left: 5px; 
+	right: 5px; 
+	z-index: 9; 
+} 
+
+.plus_control {
+	position: relative;
+	display: inline-block table;
+	padding: 0;
+	margin: 40px 0px 68px 0px;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+}
+
+.plus_control::after { 
+	content: " "; 
+	position: absolute; 
+	display: block; 
+	background-color: turquoise; 
+	height: 10px; 
+	margin-top: -5px; 
+	top: 50%; 
+	left: 5px; 
+	right: 5px; 
+	z-index: 9; 
+} 
+
+.plus_control::before { 
+	content: " "; 
+	position: absolute; 
+	display: inline-block; 
+	background-color: turquoise; 
+	width: 10px; 
+	margin-left: -5px; 
+	left: 50%; 
+	top: 5px; 
+	bottom: 5px; 
+	z-index: 9; 
+}
+
+.button {
+	display: inline-block;
+	margin-left: calc(calc(100% - 80px) / 2);
+	color: turquoise;
+	font-size: 20px;
+	background-color: #444;
+	padding: 10px;
+}
